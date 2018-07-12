@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<titl></title>
+	<title></title>
 	<script type="text/javascript" src="/js/lib/jquery-3.3.1.js"/></script>
 	<script type="text/javascript" src="/js/lib/ajax.js"/></script>
 </head>
 <body>
-	<p id="welcome_text"></p>
-	<input type="text" name="name" id="name_input" placeholder="Your name">
+	<form action="test.php" method="post">
+   	<p><select size="3" multiple name="table[]">
+    <option disabled>Choose the table</option>
+    <option value="Worker">Worker</option>
+    <option selected value="Changes">Changes</option>
+    <option value="total">total</option>
+   	</select></p>
+   	<p id="table"></p>
+	<input type="text" name="table" id="table_input" placeholder="Input the table's name">
 	<button>Here we go!</button>
 </body>
 </html>
